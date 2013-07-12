@@ -1,0 +1,221 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*Navigation*/
+
+nav:before {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 44px;
+    height: 60px;
+    background: url("sprite.png");
+    content: "";
+}
+
+.twitter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 18px;
+    background: url("sprite.png");
+    content: "";
+    background-position: -44px 0;
+}
+
+.twitter:hover {
+    background-position: -44px -50px;
+}
+
+nav {
+    height: 205px;
+    width: 100%;
+    padding-left: 60px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.8em;
+    font-size: 18px;
+}
+
+/*Header*/
+
+header {
+    height: 260px;
+    width: 100%;
+    background-color: gray;
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid rgb(249,245,232);
+    position: absolute;
+    left: 10px;
+    margin-top: 89px;
+}
+
+.bbimg {
+    width: 92%;
+}
+
+.phrase {
+    padding-top: 20px;
+}
+
+/*Description*/
+
+.bb_description {
+    background-color: rgb(249,245,232);
+}
+
+.bb_description a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+
+.bb_description a:after {
+    content: "";
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left-color: darkred;
+}
+
+div div {
+    font-size: 32px;
+    padding-left: 10px
+}
+
+div div:before {
+    content: "BB ";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.conference p, .camp p, .soon p {
+    padding: 10px 10px;
+}
+
+.des_box {
+    border-bottom: 1px solid darkgray;
+    padding: 40px 0px;
+}
+
+/*Love*/
+
+.love {
+    background-image: -webkit-linear-gradient(top, darkred, red);
+    font-size: 20px;
+    color: lightgray;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/*Sponsors*/
+
+.sponsor {
+    background-color: rgb(29,25,20);
+    text-align: center
+}
+
+.sponsor_box {
+    width: 190px;
+    height: 130px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 2px;
+}
+
+.sponsor .mail {
+    background: black url("mailchimp.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .hoefler {
+    background: black url("h_fj.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .engine {
+    background: black url("engine-yard.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .etsy {
+    background: black url("etsy.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .typekit {
+    background: black url("typekit.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .ridge {
+    background: black url("blue-ridge.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .designer {
+    background: black url("designerfund.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .facebook {
+    background: black url("facebook.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.sponsor .dropbox {
+    background: black url("dropbox.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+/*Copyright*/
+
+.copyright {
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 3px;
+    font-size: 10px;
+    padding: 10px 0px;
+}
+
+.copyright:before {
+    content: "\00a9";
+}
