@@ -58,23 +58,18 @@ nav ul li a:hover {
 /*BROOKLYN BETA INTRO*/
 
 .bbintro {
-    background-color: #333;
+    /*background-color: #333;*/
     width:100%;
     padding-top: 60px;
     padding-bottom: 80px;
     padding-left:10px;
 }
 
-.bbimage {
-    background-color: #55adab;
+.bbimage img {
     width: 100%;
-    height:50px;
+    height:auto;
     margin-bottom: 25px;
 }
-
-/*.bbintro img {
-    width: 100%;
-}*/
 
 .bbintro p {
     color:#eee;
@@ -105,6 +100,22 @@ nav ul li a:hover {
 
 .bbnews a {
     font-family: sans-serif;
+}
+
+/*Red Bottom Bar*/
+
+.redbottombar {
+    width:100%;
+    height:50px;
+    background-color:darkred;
+    text-align:center;
+    text-shadow:1px 1px #444;
+    font-size:20px;
+    padding-top: 30px;
+}
+
+.redbottombar p {
+    color:white;
 }
 
 @media screen and (max-width: 473px) {
