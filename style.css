@@ -44,14 +44,24 @@ body {
 }
 
 footer {
-    background-color: black;
-    width: 100%;
+    background-color: darkgrey;
     height:400px;
+    padding: 30px;
 }
 
 .pic {
     height: 100px;
     width: 175px;
-    background-color: white;
-    margin: 30px;
+    background-color: black;
+    display: inline-block;
+    margin: 10px;
+}
+
+.pics-container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.mailchimp {
+    background-image: url(img/mailchimp.png);
 }
