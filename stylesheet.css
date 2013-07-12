@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: serif;
+}
+
+::selection{
+    background-color: darkred;
 }
 
 nav {
@@ -30,6 +34,10 @@ nav ul {
     margin-bottom: 5px;
 }
 
+nav ul li {
+    font-family: sans-serif;
+}
+
 nav .tweeter {
     position: absolute;
     top: 10px;
@@ -42,6 +50,7 @@ nav .tweeter {
 .title {
     background-color: gray;
     height: 280px;
+    border-bottom: 1px solid lightgray;
 }
 
 .title figure {
@@ -54,7 +63,62 @@ nav .tweeter {
 
 .title p {
     color: white;
-    background-color: red;
     position: relative;
-    top: 100px;
+    top: 75px;
+    font-size: 22px;
+    padding-left: 5px;
 }
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #FFFFF0;
+    position: relative;
+    top: 144px;
+    left: 10px
+}
+
+.content {
+    padding-top: 39px;
+    background-color: #FFFFF0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+    padding-left: 5px;
+}
+
+.content h2 {
+    font-weight: normal;
+}
+
+.content p {
+    line-height: 1.4em;
+    padding-bottom: 13px;
+    font-size: 15px;
+}
+
+.content a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lovebox {
+    height: 65px;
+    background-color: darkred;
+}
+
+.lovebox h3 {
+    font-weight: normal;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    text-shadow: 0 1px black;
+}
+
+.lovebox em {
+    font-size: 5px;
+}
+
