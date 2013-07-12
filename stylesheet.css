@@ -63,13 +63,14 @@ nav .tweeter {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: lightblue;
-    height: 30px;
+    background: url("img/sprite.png");
+    background-position:-44px 5px;
+    height: 24px;
     width: 30px;
 }
 
 .title {
-    background-color: gray;
+    background: url("img/bg-home.jpg");
     height: 280px;
     border-bottom: 1px solid lightgray;
 }
@@ -152,5 +153,72 @@ nav .tweeter {
 
 .lovebox em {
     font-size: 5px;
+}
+
+.sponsors {
+    width: 100%;
+    height: 1000px;
+    background: url("img/bg-footer.jpg");
+}
+
+.mail {
+    background: url("img/mailchimp.png") no-repeat;
+}
+
+.hoefler {
+    background: url("img/h_fj.png") no-repeat;
+}
+
+.engine {
+    background: url("img/engine-yard.png") no-repeat;
+}
+
+.etsy {
+    background: url("img/etsy.png") no-repeat;
+}
+
+.typekit {
+    background: url("img/typekit.png") no-repeat;
+}
+
+.blueridge {
+    background: url("img/blue-ridge.png") no-repeat;
+}
+
+.designerfund {
+    background: url("img/designerfund.png") no-repeat;
+}
+
+.fb {
+    background: url("img/facebook.png") no-repeat;
+}
+
+.dropbox {
+
+    background: url("img/dropbox.png") no-repeat;
+}
+
+.analogfk {
+    background: url("img/sprite.png") no-repeat;
+    background-position:  0px -105px;
+}
+
+.bigsponsor {
+    height: 5.3%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    bottom: -60%;
+    background-size: 100%;
+}
+
+.sponsor {
+    height: 10%;
+    width: 49%;
+    float: left;
+    margin: .5%;
+    background-color: #191512;
+    border-radius: 5px;
+    background-size: 100%;
 }
 
