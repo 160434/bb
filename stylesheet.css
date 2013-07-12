@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+nav .Blogo {
+    background-color: red;
+    height: 60px;
+    width: 40px;
+    margin-left: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    margin-left: 70px;
+    margin-top: 10px;
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    line-height: 3em;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+nav .tweeter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+}
+
+.title {
+    background-color: gray;
+    height: 280px;
+}
+
+.title figure {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.title p {
+    color: white;
+    background-color: red;
+    position: relative;
+    top: 100px;
+}
