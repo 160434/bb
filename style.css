@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+
+}
+a{
+    text-decoration: none;
+}
+nav{
+    padding: 15px 10px;
+}
+nav ul li{
+    display: inline;
+}
+.navbar {
+    background-color: black;
+}
+.header {
+    background-color: #212121;
+    height: 500px;
+}
+header p {
+    color: white;
+    font-size: 46px;
+}
+header img {
+    width: 100%;
+    margin: 40px 0;
+}
+nav ul li a{
+    color: #f9f6e7;
+}
+nav ul li a:hover{
+    color: red;
+}
+nav div {
+    float: right;
+    margin-right: 20px;
+}
+nav a{
+    color: blue;
+}
+nav a:hover{
+    color: white;
+}
+header , nav , section , h1 {
+    max-width: 940px;
+    margin: 0 auto;
+}
+section h2 , section p , section a {
+    width:500px;
+}
+
