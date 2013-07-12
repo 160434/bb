@@ -1,0 +1,226 @@
+/*General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+::selection{
+    background-color: darkred;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+nav p {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav .Blogo {
+    background-color: red;
+    height: 60px;
+    width: 40px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.blackarrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+
+nav ul {
+    margin-left: 70px;
+    margin-top: 10px;
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    line-height: 3em;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+nav ul li {
+    font-family: sans-serif;
+}
+
+nav .tweeter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("img/sprite.png");
+    background-position:-44px 5px;
+    height: 24px;
+    width: 30px;
+}
+
+.title {
+    background: url("img/bg-home.jpg");
+    height: 280px;
+    border-bottom: 1px solid lightgray;
+}
+
+.title figure {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.title p {
+    color: white;
+    position: relative;
+    top: 75px;
+    font-size: 22px;
+    padding-left: 5px;
+}
+/*
+.title .asdf{
+    content: "*";
+    font-size: 80px;
+    border-radius: 100px;
+    color: purple;
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    line-height: 125px;
+    display: inline-block;
+}
+*/
+.ivoryarrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #FFFFF0;
+    position: relative;
+    top: 144px;
+    left: 10px
+}
+
+.content {
+    padding-top: 39px;
+    background-color: #FFFFF0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+    padding-left: 5px;
+}
+
+.content h2 {
+    font-weight: normal;
+}
+
+.content p {
+    line-height: 1.4em;
+    padding-bottom: 13px;
+    font-size: 15px;
+}
+
+.content a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lovebox {
+    height: 65px;
+    background-color: darkred;
+}
+
+.lovebox h3 {
+    font-weight: normal;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    text-shadow: 0 1px black;
+}
+
+.lovebox em {
+    font-size: 5px;
+}
+
+.sponsors {
+    width: 100%;
+    height: 1000px;
+    background: url("img/bg-footer.jpg");
+}
+
+.mail {
+    background: url("img/mailchimp.png") no-repeat;
+}
+
+.hoefler {
+    background: url("img/h_fj.png") no-repeat;
+}
+
+.engine {
+    background: url("img/engine-yard.png") no-repeat;
+}
+
+.etsy {
+    background: url("img/etsy.png") no-repeat;
+}
+
+.typekit {
+    background: url("img/typekit.png") no-repeat;
+}
+
+.blueridge {
+    background: url("img/blue-ridge.png") no-repeat;
+}
+
+.designerfund {
+    background: url("img/designerfund.png") no-repeat;
+}
+
+.fb {
+    background: url("img/facebook.png") no-repeat;
+}
+
+.dropbox {
+
+    background: url("img/dropbox.png") no-repeat;
+}
+
+.analogfk {
+    background: url("img/sprite.png") no-repeat;
+    background-position:  0px -105px;
+}
+
+.bigsponsor {
+    height: 5.3%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    bottom: -60%;
+    background-size: 100%;
+}
+
+.sponsor {
+    height: 10%;
+    width: 49%;
+    float: left;
+    margin: .5%;
+    background-color: #191512;
+    border-radius: 5px;
+    background-size: 100%;
+}
+
+
+
