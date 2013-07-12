@@ -45,7 +45,7 @@ nav a{
 nav a:hover{
     color: white;
 }
-header , nav , section , h1 {
+header , nav , section{
     max-width: 940px;
     margin: 0 auto;
 }
@@ -55,4 +55,12 @@ section h2 , section p , section a {
 section {
     padding: 20px 0;
     border-bottom: 1px solid grey;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color:white;
+    background: linear-gradient(#E80E0E,#BF0D0D);
+    padding:50px 0;
+    text-shadow:2px 2px 4px black;
 }
