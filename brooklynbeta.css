@@ -8,12 +8,28 @@
 
 /*Header*/
 
-.logo {
+.twittericon {
+    content: "";
     position: absolute;
-    background-color: red;
+    top: 0;
+    right: 30px;
+    color: white;
+    background-image: url("img/sprite.png");
+    height: 25px;
+    width: 30px;
+    background-position: -43px 7px;
+}
+
+.logo {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: white;
+    background-image: url("img/sprite.png");
+    height: 90px;
     width: 60px;
-    height: 80px;
-    margin-left: 10px;
+    background-position: 16px 7px;
 }
 
 nav {
@@ -42,7 +58,7 @@ li {
 
 .title {
     margin-top: 0;
-    background-color: #999999;
+    background-image: url("img/bg-home.jpg");
     padding-top: 40px;
     padding-left: 20px;
 }
