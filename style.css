@@ -59,7 +59,7 @@ nav li a {
 header {
     height: 260px;
     width: 100%;
-    background-color: gray;
+    background: url("img/bg-home.jpg");
     padding: 20px;
     color: white;
     font-size: 28px;
@@ -219,3 +219,5 @@ div div:before {
 .copyright:before {
     content: "\00a9";
 }
+
+/*Responsive*/
