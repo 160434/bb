@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-color: black;
+    background-image: url(img/bg-home.jpg);
     height:300px;
     width: 100%;
 
@@ -27,6 +27,12 @@ body {
 .container {
     width: 600px;
     margin: 0 auto;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+}
+
+.container p {
+    font-size:10px;
 }
 
 .makesomethingyoulove {
@@ -64,4 +70,69 @@ footer {
 
 .mailchimp {
     background-image: url(img/mailchimp.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.hoefler-frere {
+     background-image: url(img/h_fj.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.engineyard {
+      background-image: url(img/engine-yard.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.etsy {
+      background-image: url(img/etsy.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.typekit {
+      background-image: url(img/typekit.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.BRFNY {
+  background-image: url(img/blue-ridge.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.designerfund {
+      background-image: url(img/designerfund.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.facebook {
+      background-image: url(img/facebook.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.dropbox {
+      background-image: url(img/dropbox.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.mainlogo {
+        width: 600px;
+    margin: 0 auto;
+    height:68px;
+    display: block;
+    padding-top: 100px
+}
+
+.discription {
+    font-size: 20px;
+    color:white;
+         width: 600px;
+    margin: 0 auto;
 }
