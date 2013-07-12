@@ -52,4 +52,7 @@ header , nav , section , h1 {
 section h2 , section p , section a {
     width:500px;
 }
-
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+}
