@@ -1,3 +1,5 @@
+/*General*/
+
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +14,34 @@ nav {
     background-color: black;
     width: 100%;
 }
-
+nav p {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
 nav .Blogo {
     background-color: red;
     height: 60px;
     width: 40px;
     margin-left: 10px;
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
+}
+.blackarrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    top: 50px;
+    left: 0px;
 }
 
 nav ul {
@@ -42,7 +63,7 @@ nav .tweeter {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: blue;
+    background-color: lightblue;
     height: 30px;
     width: 30px;
 }
@@ -54,7 +75,6 @@ nav .tweeter {
 }
 
 .title figure {
-    background-color: white;
     height: 50px;
     width: 100%;
     position: relative;
@@ -68,8 +88,20 @@ nav .tweeter {
     font-size: 22px;
     padding-left: 5px;
 }
-
-.arrow {
+/*
+.title .asdf{
+    content: "*";
+    font-size: 80px;
+    border-radius: 100px;
+    color: purple;
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    line-height: 125px;
+    display: inline-block;
+}
+*/
+.ivoryarrow {
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
