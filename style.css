@@ -3,23 +3,33 @@
     padding: 0;
 }
 body{
-
 }
 a{
     text-decoration: none;
 }
+h2{
+    font-weight: normal;
+    font-size: 40px;
+}
+b{
+    font-size: 42px;
+}
 nav{
     padding: 15px 10px;
+    position:relative;
 }
 nav ul li{
     display: inline;
+    padding:20px;
 }
 .navbar {
     background-color: black;
 }
 .header {
-    background-color: #212121;
+    background: url("img/bg-home.jpg") no-repeat;
     height: 500px;
+    background-size: 100% 100%;
+    background-position: center center;
 }
 header p {
     color: white;
@@ -32,15 +42,42 @@ header img {
 nav ul li a{
     color: #f9f6e7;
 }
+nav ul .beyond {
+    padding-left: 70px;
+}
+nav ul .beyond:before {
+    content: "";
+    background: url("img/sprite.png") no-repeat;
+    height: 85px;
+    width: 63px;
+    background-position: 20px 20px;
+    position: absolute;
+    top: -20px;
+    left:0;
+}
 nav ul li a:hover{
     color: red;
 }
-nav div {
+
+nav .twitter{
+    padding-left: 30px;
+    color:#57BA98;
     float: right;
     margin-right: 20px;
+    position: relative;
 }
-nav a{
-    color: blue;
+nav .twitter:before {
+    content:"";
+    background: url("img/sprite.png") no-repeat;
+    height: 22px;
+    width: 25px;
+    background-position: -45px 2px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+nav .twitter:hover:before {
+     background-position: -45px -51px;
 }
 nav a:hover{
     color: white;
@@ -50,7 +87,31 @@ header , nav , section{
     margin: 0 auto;
 }
 section h2 , section p , section a {
-    width:500px;
+    width:400px;
+    line-height: 1.7em;
+}
+.content section{
+    padding:50px 0 50px 20px;
+}
+.content section p {
+    font-size: 17px;
+}
+.content section h2 a{
+    color: black;
+    font-weight: normal;
+}
+.content section h2 a:hover{
+    text-decoration: none;
+}
+.content section a{
+    color:#BF0D0D;
+    font-weight: bold;
+}
+.content section a:hover{
+    text-decoration: underline;
+}
+.content {
+    background-color: #f9f6e7;
 }
 section {
     padding: 20px 0;
@@ -63,4 +124,25 @@ h1 {
     background: linear-gradient(#E80E0E,#BF0D0D);
     padding:50px 0;
     text-shadow:2px 2px 4px black;
+}
+.image-box {
+    background-color: black;
+    text-align: center;
+}
+.image-box img {
+    padding: 20px;
+    margin: 10px;
+    background:#1F1F1F
+}
+.conference {
+    background: #f9f6e7 url("img/conference.png") no-repeat;
+    background-position: center right;
+}
+.summer-camp {
+    background: #f9f6e7 url("img/summer-camp.jpg") no-repeat;
+    background-position: center right;
+}
+.coming-soon {
+    background: #f9f6e7 url("img/news.jpg") no-repeat;
+    background-position: center right;
 }
