@@ -16,6 +16,10 @@ body {
     position: relative;
 }
 
+header .container {
+    height: 100%;
+}
+
 /*Navigation*/
 
 .b-logo-red {
