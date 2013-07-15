@@ -6,6 +6,16 @@
     font-family: serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in;
+}
+
+a:hover {
+    color: red;
+}
+
 .group:after {
   content: "";
   display: table;
