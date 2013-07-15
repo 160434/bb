@@ -18,6 +18,8 @@
     height: 25px;
     width: 30px;
     background-position: -43px 7px;
+    text-indent: -999999px;
+    overflow: hidden;
 }
 
 .logo {
@@ -42,6 +44,9 @@ nav ul {
     list-style-type: none;
     padding-left: 60px;
     padding-top: 15px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
@@ -49,6 +54,13 @@ li {
     padding-bottom: 35px;
     margin-top: 0;
     margin-bottom: 0;
+    transition: color 0.01s ease-out;
+    -webkit-transition: color 0.01s ease-out;
+
+}
+
+li:hover {
+    color: darkred;
 }
 
 .purpose {
@@ -68,6 +80,23 @@ li {
     margin-top: 20px;
     height: 90px;
     padding-right: 20px;
+    margin-bottom:10px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bluecircle {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    color: white;
+    background-image: url("img/sprite.png");
+    height: 90px;
+    width: 90px;
+    background-position: -70px 1px;
 }
 
 .slogan {
@@ -75,6 +104,9 @@ li {
     margin-top: 30px;
     font-size: 25px;
     padding-bottom: 50px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .triangle {
@@ -98,6 +130,9 @@ li {
     padding-bottom: 40px;
     border-bottom: 1px solid gray;
     padding-left: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .information img {
@@ -110,6 +145,7 @@ h2 {
     font-size: 30px;
     font-weight: normal;
 }
+
 
 strong {
     font-weight: 900;
@@ -169,7 +205,6 @@ p {
 
 @media screen and (min-width: 770px) {
 
-
     .information h2, .information p {
         width: 300px;
     }
@@ -178,5 +213,12 @@ p {
         display: block;
         float: right;
         width: 380px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+
+    .bluecircle {
+        display: block;
     }
 }
