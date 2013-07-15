@@ -151,11 +151,16 @@ nav ul li a:hover {
 
 .bbnews p{
     letter-spacing: 0.075em;
+    font-family: sans-serif;
 }
 
 .bbnews a {
     font-family: sans-serif;
     color:darkred;
+}
+
+.bbnews h2 {
+    padding-bottom: 10px;
 }
 
 .subtext {
@@ -168,9 +173,9 @@ nav ul li a:hover {
 .bbintro p {
     font-size: 30px;
 }
-
+/*
 .bbconf {
-}
+}*/
 
 .bbconf p {
     width:35%;
@@ -183,17 +188,17 @@ nav ul li a:hover {
 .conferenceimagecontainer:before {
     content: "";
     background: url('img/conference.png');
-    background-size: 100%;
+    background-szize: 100%;
     position: relative;
 }
 
-.bbsummer {
+/*.bbsummer {
 
-}
+}*/
 
-.bbcomingsoon {
+/*.bbcomingsoon {
 
-}
+}*/
 
 /*Red Bottom Bar*/
 
