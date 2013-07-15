@@ -26,6 +26,7 @@ a {
 
 .navbar {
     width:100%;
+    background-color: black;
 }
 
 .bribbon {
@@ -156,7 +157,20 @@ nav ul li a:hover {
     padding-left:8px;
 }
 
-.bbnews
+.bbnewssection p {
+    color:black;
+    font-size: 16px;
+     width:45%;
+}
+
+.bbnewssection:after {
+    content:".";
+    clear:both;
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
 
 .bbnewsbold {
     font-weight: bold;
@@ -184,26 +198,33 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
-.bbintro p {
+/*.bbintro p {
     font-size: 30px;
+}*/
+
+.bbintro:before {
+    content: '';
+    top:0;
+    left:0;
+    background: url('img/bg-home.jpg') no-repeat;
 }
+
+.bbintro {
+    width:100%;
+    background: url('img/bg-home.jpg');
+}
+
 /*
 .bbconf {
 }*/
 
-.bbconf p {
-    width:35%;
-}
-
 .confimg {
     float:right;
+    height:150px;
 }
 
-.conferenceimagecontainer:before {
-    content: "";
-    background: url('img/conference.png');
-    background-size: 100%;
-    position: relative;
+.campimg {
+
 }
 
 /*.bbsummer {
