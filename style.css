@@ -31,9 +31,22 @@ nav ul li{
     background-size: 100% 100%;
     background-position: center center;
 }
+
+header p:before {
+    content: "";
+    background: url("img/sprite.png") no-repeat -70px 0px;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 header p {
+    position: relative;
     color: white;
-    font-size: 46px;
+    font-size: 40px;
+    padding-left: 110px;
 }
 header img {
     width: 100%;
@@ -87,7 +100,7 @@ header , nav , section{
     margin: 0 auto;
 }
 section h2 , section p , section a {
-    width:400px;
+    max-width:400px;
     line-height: 1.7em;
 }
 .content section{
@@ -117,14 +130,32 @@ section {
     padding: 20px 0;
     border-bottom: 1px solid grey;
 }
-h1 {
-    font-size: 60px;
-    text-align: center;
-    color:white;
+
+.love {
     background: linear-gradient(#E80E0E,#BF0D0D);
     padding:50px 0;
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 60px;
+    padding-right: 30px;
+    color:white;
     text-shadow:2px 2px 4px black;
 }
+
+h1:after {
+    content: "";
+    background: url("img/sprite.png") no-repeat -50px -32px;
+    height: 15px;
+    width: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
 .image-box {
     background-color: black;
     text-align: center;
@@ -134,6 +165,11 @@ h1 {
     margin: 10px;
     background:#1F1F1F
 }
+
+.image-box section {
+    border:none;
+}
+
 .conference {
     background: #f9f6e7 url("img/conference.png") no-repeat;
     background-position: center right;
@@ -145,4 +181,68 @@ h1 {
 .coming-soon {
     background: #f9f6e7 url("img/news.jpg") no-repeat;
     background-position: center right;
+}
+
+.footer-img {
+    position: relative;
+    padding-bottom: 60px;
+    padding-right: 310px;
+}
+
+.footer-img:before {
+    content:"";
+    background: url("img/sprite.png") no-repeat 0px -90px;
+    position: absolute;
+    top:0;
+    height: 46px;
+    width: 340px
+}
+footer p {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    color: grey;
+    font-size: 12px;
+    letter-spacing: 2px
+}
+
+@media screen and (max-width: 950px) {
+    header p:before{
+        display: none;
+    }
+    header p {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .conference , .summer-camp , .coming-soon {
+        background: none;
+    }
+    section h2 , section p , section a {
+        max-width: none;
+        padding: 0 10px ;
+    }
+    .header {
+        height: 400px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h1:after {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li{
+        display: block;
+        padding: 15px;
+    }
+    .header {
+        height: auto;
+    }
+    .header p {
+        font-size: 30px;
+        padding: 0 10px 20px 10px;
+    }
 }
