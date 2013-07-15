@@ -11,8 +11,8 @@
 .twittericon {
     content: "";
     position: absolute;
-    top: 0;
-    right: 30px;
+    top: 10px;
+    right: 10px;
     color: white;
     background-image: url("img/sprite.png");
     height: 25px;
@@ -68,7 +68,6 @@ li {
     margin-top: 20px;
     height: 90px;
     padding-right: 20px;
-
 }
 
 .slogan {
@@ -101,6 +100,10 @@ li {
     padding-left: 20px;
 }
 
+.information img {
+    display: none;
+}
+
 h2 {
     padding-top: 40px;
     margin-bottom: 20px;
@@ -120,6 +123,7 @@ p {
     padding-top: 20px;
     color: red;
 }
+
 
 /*Make Something You Love*/
 
@@ -144,4 +148,34 @@ p {
     width: 190px;
     background-color: black;
     margin: 2px;
+}
+
+/*Responsive Design*/
+
+@media screen and (min-width: 480px) {
+
+    li {
+        display: inline-block;
+    }
+
+    .love {
+        font-size: 30px;
+    }
+
+    .sponsors img {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 770px) {
+
+    .information h2, .information p {
+    width: 300px;
+    }
+
+    .information img {
+        display: block;
+        float: right;
+        width: 400px;
+    }
 }
