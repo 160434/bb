@@ -10,7 +10,7 @@ body {
     background-color: black;
 }
 
-.all_container {
+.container {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -117,9 +117,9 @@ header {
     border-left-color: darkred;
 }
 
-div div {
+.bb_description .before_sub-head {
     font-size: 32px;
-    padding-left: 10px
+    padding-left: 10px;
 }
 
 .before_sub-head:before {
@@ -217,6 +217,14 @@ div div {
     background-position: center;
 }
 
+.analog {
+    background-image: url("img/sprite.png");
+    width: 313px;
+    height: 45px;
+    background-position: 0 -90px;
+    margin: 20px auto;
+}
+
 /*Copyright*/
 
 .copyright {
@@ -258,6 +266,23 @@ div div {
     .twitter:hover:after {
         color: rgb(249,245,232);
     }
+
+    nav {
+        height: 40px;
+    }
+
+    header {
+        height: 420px;
+    }
+
+    .bb_description {
+        padding-top: 400px;
+    }
+
+    .bbimg, .phrase {
+        padding-top: 40px;
+        padding-left: 20px;
+    }
 }
 
 @media screen and (min-width: 780px) {
@@ -277,6 +302,7 @@ div div {
         width: 500px;
         margin: 0 auto;
         position: relative;
+        padding-top: 15px;
     }
 
     .love p:after {
@@ -293,21 +319,22 @@ div div {
     .conference_img {
         background-image: url("img/conference.png");
         float: right;
-        width: 400px;
+        width: 410px;
         height: 246px;
     }
 
      .camp_img {
         background-image: url("img/summer-camp.jpg");
         float: right;
-        width: 400px;
+        width: 410px;
         height: 246px;
     }
 
     .soon_img {
         background-image: url("img/news.jpg");
+        background-repeat: no-repeat;
         float: right;
-        width: 400px;
+        width: 410px;
         height: 266px;
     }
 
@@ -315,21 +342,24 @@ div div {
         padding-bottom: 140px;
     }
 
-    nav {
-        height: 40px;
+}
+
+@media screen and (min-width: 780px) {
+
+    .phrase {
+        position: relative;
+        padding-left: 100px;
     }
 
-    .bbimg, .phrase {
-        padding-top: 40px;
-        padding-left: 20px;
-    }
-
-    header {
-        height: 320px;
-    }
-
-    .bb_description {
-        padding-top: 300px;
+    .phrase:before {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100px;
+        height: 90px;
+        background: url("sprite.png");
+        content: "";
+        background-position: -69px 0;
     }
 
 }
