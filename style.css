@@ -10,9 +10,14 @@ body {
     background-color: black;
 }
 
+.all_container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 /*Navigation*/
 
-nav:before {
+.b-logo-red {
     position: absolute;
     top: 0;
     left: 10px;
@@ -20,6 +25,7 @@ nav:before {
     height: 60px;
     background: url("sprite.png");
     content: "";
+    z-index: 40;
 }
 
 .twitter {
@@ -40,6 +46,9 @@ nav:before {
 nav {
     height: 205px;
     width: 100%;
+}
+
+nav ul {
     padding-left: 60px;
 }
 
@@ -60,9 +69,9 @@ header {
     height: 260px;
     width: 100%;
     background: url("img/bg-home.jpg");
-    padding: 20px;
     color: white;
     font-size: 28px;
+    position: absolute;
 }
 
 .arrow-up {
@@ -73,7 +82,7 @@ header {
     border-bottom: 15px solid rgb(249,245,232);
     position: absolute;
     left: 10px;
-    margin-top: 89px;
+    bottom: 0;
 }
 
 .bbimg {
@@ -87,6 +96,7 @@ header {
 /*Description*/
 
 .bb_description {
+    padding-top: 270px;
     background-color: rgb(249,245,232);
 }
 
@@ -112,7 +122,7 @@ div div {
     padding-left: 10px
 }
 
-div div:before {
+.before_sub-head:before {
     content: "BB ";
     font-weight: bold;
     font-size: 35px;
@@ -124,85 +134,86 @@ div div:before {
 
 .des_box {
     border-bottom: 1px solid darkgray;
-    padding: 40px 0px;
+    padding: 40px 0;
 }
 
 /*Love*/
 
 .love {
-    background-image: -webkit-linear-gradient(top, darkred, red);
+    background-image: -webkit-linear-gradient(top, rgb(131, 0, 15), rgb(164, 0, 19));
     font-size: 20px;
     color: lightgray;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 /*Sponsors*/
 
 .sponsor {
     background-color: rgb(29,25,20);
-    text-align: center
+    text-align: center;
+
 }
 
 .sponsor_box {
-    width: 190px;
+    width: 45%;
     height: 130px;
     border-radius: 5px;
     display: inline-block;
-    padding: 5px 2px;
+    padding: 2px 2px;
 }
 
 .sponsor .mail {
     background: black url("mailchimp.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .hoefler {
     background: black url("h_fj.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .engine {
     background: black url("engine-yard.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .etsy {
     background: black url("etsy.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .typekit {
     background: black url("typekit.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .ridge {
     background: black url("blue-ridge.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .designer {
     background: black url("designerfund.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .facebook {
     background: black url("facebook.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
 .sponsor .dropbox {
     background: black url("dropbox.png") no-repeat;
-    background-size: 100%;
+    background-size: 180px;
     background-position: center;
 }
 
@@ -213,7 +224,7 @@ div div:before {
     color: gray;
     letter-spacing: 3px;
     font-size: 10px;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .copyright:before {
@@ -221,3 +232,104 @@ div div:before {
 }
 
 /*Responsive*/
+
+@media screen and (min-width: 540px) {
+
+    nav li {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    nav li a {
+        font-size: 16px;
+    }
+
+    .twitter:after {
+        content: "Twitter";
+        color: rgb(38, 123, 123);
+        position: absolute;
+        left: 30px;
+    }
+
+    .twitter {
+        right: 60px;
+    }
+
+    .twitter:hover:after {
+        color: rgb(249,245,232);
+    }
+}
+
+@media screen and (min-width: 780px) {
+
+    .sponsor_box {
+        width: 30%;
+    }
+
+    .love {
+        height: 80px;
+        font-size: 40px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .love p {
+        width: 500px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .love p:after {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        width: 20px;
+        height: 15px;
+        background: url("sprite.png");
+        content: "";
+        background-position: -49px -31px;
+    }
+
+    .conference_img {
+        background-image: url("img/conference.png");
+        float: right;
+        width: 400px;
+        height: 246px;
+    }
+
+     .camp_img {
+        background-image: url("img/summer-camp.jpg");
+        float: right;
+        width: 400px;
+        height: 246px;
+    }
+
+    .soon_img {
+        background-image: url("img/news.jpg");
+        float: right;
+        width: 400px;
+        height: 266px;
+    }
+
+    .des_box {
+        padding-bottom: 140px;
+    }
+
+    nav {
+        height: 40px;
+    }
+
+    .bbimg, .phrase {
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    header {
+        height: 320px;
+    }
+
+    .bb_description {
+        padding-top: 300px;
+    }
+
+}
