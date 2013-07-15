@@ -6,14 +6,25 @@
     font-family: serif;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
 ::selection{
     background-color: #790707;
 }
+*/
+
+/*Nav Bar*/
 
 nav {
     background-color: black;
     width: 100%;
 }
+
 nav p {
     color: white;
     position: absolute;
@@ -23,6 +34,7 @@ nav p {
     font-size: 25px;
     font-weight: bold;
 }
+
 nav .Blogo {
     background:url("img/sprite.png") no-repeat;
     height: 65px;
@@ -59,6 +71,8 @@ nav .tweeter {
     width: 30px;
 }
 
+/*Title Section*/
+
 .title {
     background: url("img/bg-home.jpg");
     height: 280px;
@@ -69,7 +83,7 @@ nav .tweeter {
     /*height: 50px;*/
     width: 100%;
     position: relative;
-    top: 50px;
+    top: 40px;
 }
 
 .title figure img {
@@ -79,34 +93,30 @@ nav .tweeter {
 
 .title p {
     color: white;
-    position: relative;
-    top: 75px;
+    position: absolute;
+    bottom: 300px;
     font-size: 22px;
-    padding-left: 5px;
 }
-/*
-.title .asdf{
-    content: "*";
-    font-size: 80px;
-    border-radius: 100px;
-    color: purple;
-    background-color: pink;
-    width: 100px;
-    height: 100px;
-    line-height: 125px;
-    display: inline-block;
+
+.greenlogo {
+    background: url("img/sprite.png") no-repeat -70px 0;
+    width: 90px;
+    height: 90px;
+    position: absolute;
 }
-*/
+
 .ivoryarrow {
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 15px solid #F9F5E8;
-    position: relative;
-    top: 135px;
+    position: absolute;
+    bottom: 245px;
     left: 10px
 }
+
+/*Content*/
 
 .content {
     padding-top: 39px;
@@ -117,23 +127,30 @@ nav .tweeter {
     position: relative;
 }
 
-.content img {
-    position: absolute;
-    right: 0;
-    /*top: 5px;*/
-    display: inline-block;
+.content div {
+    float: left;
+}
+
+.content img {/*
+    position: relative;
+    right: 0;*/
+    /*display: inline-block;*/
+    float: right;
+    margin-right: 25px;
 }
 
 .content h2 {
     font-weight: normal;
-    display: inline;
+    display: block;
 }
 
 .content p {
     line-height: 1.4em;
     padding-bottom: 13px;
     font-size: 15px;
-    display: inline;
+    /*display: inline-block;*/
+    /*width: 40%;*/
+    /*float: left;*/
 }
 
 .content a {
@@ -141,7 +158,11 @@ nav .tweeter {
     color: darkred;
     font-weight: bold;
     font-size: 14px;
+    /*display: block;*/
+    float: left;
 }
+
+/*Lovebox and sponsors*/
 
 .lovebox {
     height: 62px;
@@ -214,19 +235,57 @@ footer {
 /*Responsive Design*/
 
 @media screen and (min-width: 480px) {
+
     nav ul li {
         display: inline-block;
         padding: 0 10px;
     }
+
+    .title p {
+        bottom: 400px;
+    }
+
+    .ivoryarrow {
+        bottom: 370px;
+    }
 }
 
 @media screen and (max-width: 780px) {
+
     .content img {
         display: none;
+    }
+
+    .greenlogo {
+        display: none;
+    }
+
+    .title p {
+        margin-top: 100px;
+        margin-left: 20px;
     }
 }
 
 @media screen and (min-width: 780px) {
 
+    .title {
+        padding-bottom: 100px;
+    }
+    .title p {
+        padding-left: 100px;
+        margin-top: 50px;
+    }
+    .ivoryarrow {
+        bottom: 270px;
+    }
+
+    .content div {
+        float: left;
+        width: 270px;
+    }
+
 }
 
+@media screen and (min-width: 800px) {
+
+}
