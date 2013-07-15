@@ -7,7 +7,7 @@
 }
 
 ::selection{
-    background-color: darkred;
+    background-color: #790707;
 }
 
 nav {
@@ -24,24 +24,14 @@ nav p {
     font-weight: bold;
 }
 nav .Blogo {
-    background-color: red;
-    height: 60px;
+    background:url("img/sprite.png") no-repeat;
+    height: 65px;
     width: 40px;
     margin-left: 10px;
     position: absolute;
     z-index: 0;
     top: 0;
     left: 0;
-}
-.blackarrow {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 10px solid black;
-    position: relative;
-    top: 50px;
-    left: 0px;
 }
 
 nav ul {
@@ -76,10 +66,15 @@ nav .tweeter {
 }
 
 .title figure {
-    height: 50px;
+    /*height: 50px;*/
     width: 100%;
     position: relative;
     top: 50px;
+}
+
+.title figure img {
+    width: 100%;
+    height: auto;
 }
 
 .title p {
@@ -107,28 +102,38 @@ nav .tweeter {
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 15px solid #FFFFF0;
+    border-bottom: 15px solid #F9F5E8;
     position: relative;
-    top: 144px;
+    top: 135px;
     left: 10px
 }
 
 .content {
     padding-top: 39px;
-    background-color: #FFFFF0;
+    background-color: #F9F5E8;
     padding-bottom: 40px;
     border-bottom: 1px solid lightgray;
     padding-left: 5px;
+    position: relative;
+}
+
+.content img {
+    position: absolute;
+    right: 0;
+    /*top: 5px;*/
+    display: inline-block;
 }
 
 .content h2 {
     font-weight: normal;
+    display: inline;
 }
 
 .content p {
     line-height: 1.4em;
     padding-bottom: 13px;
     font-size: 15px;
+    display: inline;
 }
 
 .content a {
@@ -139,7 +144,7 @@ nav .tweeter {
 }
 
 .lovebox {
-    height: 65px;
+    height: 62px;
     background-color: darkred;
 }
 
@@ -157,68 +162,71 @@ nav .tweeter {
 
 .sponsors {
     width: 100%;
-    height: 1000px;
     background: url("img/bg-footer.jpg");
+    text-align: center;
 }
 
-.mail {
-    background: url("img/mailchimp.png") no-repeat;
-}
-
-.hoefler {
-    background: url("img/h_fj.png") no-repeat;
-}
-
-.engine {
-    background: url("img/engine-yard.png") no-repeat;
-}
-
-.etsy {
-    background: url("img/etsy.png") no-repeat;
-}
-
-.typekit {
-    background: url("img/typekit.png") no-repeat;
-}
-
-.blueridge {
-    background: url("img/blue-ridge.png") no-repeat;
-}
-
-.designerfund {
-    background: url("img/designerfund.png") no-repeat;
-}
-
-.fb {
-    background: url("img/facebook.png") no-repeat;
-}
-
-.dropbox {
-
-    background: url("img/dropbox.png") no-repeat;
-}
-
-.analogfk {
-    background: url("img/sprite.png") no-repeat;
-    background-position:  0px -105px;
+.sponsors .dropbox {
+    margin-left: 25%
 }
 
 .bigsponsor {
     height: 5.3%;
     width: 100%;
     background-color: white;
-    position: relative;
-    bottom: -60%;
     background-size: 100%;
+    display: inline-block;
+
+}
+
+.sponsor img {
+    width: 180px;
 }
 
 .sponsor {
-    height: 10%;
+    text-align: center;
+    height: 13%;
     width: 49%;
     float: left;
-    margin: .5%;
+    margin: 1% .5% 1% .5%;
     background-color: #191512;
-    border-radius: 5px;
-    background-size: 100%;
+    border-radius: 10px;
+}
+
+.analogfk {
+    width: 345px;
+    height: 50px;
+    background:url(img/sprite.png) no-repeat 20px -90px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1C1B17;
+    text-transform: uppercase;
+    color: #565959;
+    padding: 20px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/*Responsive Design*/
+
+@media screen and (min-width: 480px) {
+    nav ul li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .content img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 780px) {
+
 }
 
