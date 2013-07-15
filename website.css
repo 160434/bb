@@ -111,6 +111,17 @@ h2 {
 
 /* MAIN SECTION */
 
+.arrow-up {
+    position: relative;
+    left: 25px;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FBF7E7;
+}
+
 section {
     background-color: #FBF7E7;
 }
@@ -156,30 +167,83 @@ article img {
 .love {
     text-align: center;
     padding: 20px;
-    font-size: 36px;
-    background-color: #960010;
-    color: white;
+    font-size: 60px;
+    height: 150px;
+    background: linear-gradient(#83000F, #A40013);
+    color: #DBD7C8;
     font-weight: lighter;
+    text-shadow: 1px 1px 2px #555;
 }
 
 h4 {
+    margin-top: 40px;
     display: inline-block;
     position: relative;
+    font-weight: normal;
 }
 
 .love h4:after {
     content: "";
     width: 20px;
-    height: 20px;
-    background: url(img/sprite.png) no-repeat -45px -10px;
+    height: 15px;
+    background: url(img/sprite.png) no-repeat -50px -32px;
     position: absolute;
-    right: -15px;
-    bottom: 0;
+    right: -25px;
+    bottom: 5px;
 }
 
+/* SPONSORS */
 
+.sponsors {
+    background-color: #181818;
+    text-align: center;
+}
 
+.sponsors div {
+    display: inline-block;
+}
 
+.sponsors img {
+    padding: 20px;
+    margin: 7px;
+    background: black;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: #151512;
+    padding: 40px 0;
+}
+
+footer .analog {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+    width: 115px;
+    background: url("img/sprite.png") no-repeat 0 -91px;
+}
+
+footer p {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url("img/sprite.png") no-repeat -115px -91px;
+}
+
+footer .fictivekin {
+    display: inline-block;
+    height: 45px;
+    width: 155px;
+    background: url("img/sprite.png") no-repeat -160px -91px;
+}
+
+h6 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #393836;
+}
 
 
 @media screen and (max-width: 760px) {
