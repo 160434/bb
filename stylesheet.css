@@ -10,14 +10,23 @@
 
 body {
     margin: 0 auto;
-    max-width:993px;
+/*    max-width:993px;*/
 }
 
 a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 993px;
+    margin: 0 auto;
+}
+
 /*NAVBAR*/
+
+.navbar {
+    width:100%;
+}
 
 .bribbon {
     float:left;
@@ -193,7 +202,7 @@ nav ul li a:hover {
 .conferenceimagecontainer:before {
     content: "";
     background: url('img/conference.png');
-    background-szize: 100%;
+    background-size: 100%;
     position: relative;
 }
 
@@ -289,7 +298,7 @@ nav ul li a:hover {
 
 @media screen and (min-width:992px) {
     body {
-        max-width:993px;
+        /*max-width:993px;*/
         background-color: #2c3747;
     }
 
