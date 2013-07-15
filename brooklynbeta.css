@@ -169,13 +169,14 @@ p {
 
 @media screen and (min-width: 770px) {
 
+
     .information h2, .information p {
-    width: 300px;
+        width: 300px;
     }
 
     .information img {
         display: block;
         float: right;
-        width: 400px;
+        width: 380px;
     }
 }
