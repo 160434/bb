@@ -1,16 +1,16 @@
 /*General*/
+
 * {
     margin: 0;
     padding: 0;
 }
 /*body*/
 .container {
-    max-width: 600px;
 }
 
 /*navigation*/
 nav {
-    background-color: black;
+    background: url("img/bg-header.png");
     width: 100%;
     height:202px;
 }
@@ -40,9 +40,18 @@ nav .logo {
 
 }
 
+nav a {
+    transition: all .2s ease-in;
+}
+
 nav a:hover {
     color: red;
     text-decoration: none;
+}
+
+
+.logo {
+    width: 100%;
 }
 
 .twitterbird {
@@ -71,11 +80,18 @@ header {
     position: relative;
     top: 40px;
     left: 0;
-    margin-left: 35px;
+    /*margin-left: 35px;*/
 
 }
-.title figure img{
-    height: 50px;
+
+.title {
+    width: 100%;
+    height: auto;
+}
+
+.title img{
+   width:100%;
+    height: auto;
 }
 .about {
     margin-top: 120px;
@@ -89,6 +105,9 @@ border-bottom: 1px solid black;
 background-color: #f9f5e8;
 font-family: sans-serif;
 padding-top: 30px;
+}
+.pic {
+    visibility: hidden;
 }
 .subtitle {
     padding-top: 10px;
@@ -115,15 +134,12 @@ strong {
 a:hover {
     text-decoration: underline;
 }
-.arrow-right {
-    width: 10px;
-    height: 3px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid green;
-    display: inline-block;
-    float: right;
-    padding-right: 100px;
+.arrow-up {
+    width: 1px;
+    height: 60px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #f9f5e8;
 }
 
 /*youlove*/
@@ -139,10 +155,132 @@ a:hover {
     text-align: center;
     padding-top: 25px;
     color: white;
+}
+/*FOOTER*/
+.footer {
+    width: 100%;
+    height: 825px;
+    background: url(img/bg-footer.jpg);
+    text-align: center;
+}
+.mailchimp {
 
-
+    width: 45%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.hoefler{
+    width: 45%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.engine {
+     width: 45%;
+     padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.etsy {
+     width: 45%;
+     padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.type {
+    width: 45%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.ridge {
+     width: 45%;
+     padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.designer {
+    width: 45%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.facebook {
+     width: 45%;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 13%;
+    display: inline-block;
+}
+.dropbox {
+    width: 45%;
+    padding-top: 10px;
+    height: 13%;
+    display: inline-block;
 }
 
+.kin {
+    background: url("img/sprite.png");
+    width: 60%;
+    padding-top: 10px;
+    height: 13%;
+    margin-top: 70px;
+    display: inline-block;
+    background-position: 0 -90px;
+    width: 314px;
+    height: 36.3px;
+}
+.copyright {
+    color: gray;
+    margin-top: 40px;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+/*RESPONSIVE*/
 
+@media screen and (min-width: 600px) {
+    nav {
+        height: 50px;
+    }
+    nav ul li {
+        display: inline;
+        word-spacing:10px;
+    }
+    .features {
+        float: right;
+    }
+
+ @media screen and (min-width: 960px) {
+    nav {
+        height: 50px;
+    }
+    nav ul li {
+        display: inline;
+    }
+    .title img {
+        display:block;
+        width:960px;
+        height: auto;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+@media screen and (max-width: 770px) {
+
+    .pic {
+            display: inline;
+        }
+
+}
 
 
